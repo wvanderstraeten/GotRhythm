@@ -1,0 +1,217 @@
+<html>
+
+<meta charset="UTF-8">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/basepos.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/button.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/controls.css"></link>
+  <script src="js/interact.min.js"></script>
+  <title>GotRhythm!</title>
+</head>
+
+<body>
+
+  <div class="btn">
+    <div id="btn-front"><img id="logo" src="img/GotRhythm.png"></div>
+    <div id="btn-back" class="hide">
+      <p><img id="settings" class="settings" src="img/settings.png"></p>
+      <button class="goback"><img id="goback" class="settings" src="img/back.png"></button>
+      <button class="select"><img id="select" class="settings" src="img/select.png"></button>
+      <button class="metronome"><img id="metronome" class="settings" src="img/metronome.png"></button>
+      <button class="bars"><img id="bars" class="settings" src="img/bar.png"></button>
+      <div id="copyright">&copy; Wim Vanderstraeten 2016</div>
+      <!-- <input class="metronome" id="BPMinput" type="text" maxlength="3" onkeyup="this.value = minmax(this.value, 40, 208)"/> -->
+    </div>
+  </div>
+
+  <div id="empty"><!-- class empty -->
+
+    <!-- row1 -->
+    <div id="krt01" class="row1 col1 empty"></div>
+    <div id="krt02" class="row1 col2 empty"></div>
+    <div id="krt03" class="row1 col3 empty"></div>
+    <div id="krt04" class="row1 col4 empty"></div>
+    <div id="krt05" class="row1 col5 empty"></div>
+    <div id="krt06" class="row1 col6 empty"></div>
+    <div id="krt07" class="row1 col7 empty"></div>
+
+    <!-- row2 -->
+    <div id="krt08" class="row2 col1 empty"></div>
+    <div id="krt09" class="row2 col2 empty"></div>
+    <div id="krt10" class="row2 col3 empty"></div>
+    <div id="krt11" class="row2 col4 empty"></div>
+    <div id="krt12" class="row2 col5 empty"></div>
+    <div id="krt13" class="row2 col6 empty"></div>
+    <div id="krt14" class="row2 col7 empty"></div>
+
+    <!-- row3 -->
+    <div id="krt15" class="row3 col1 empty"></div>
+    <div id="krt16" class="row3 col2 empty"></div>
+    <div id="krt17" class="row3 col3 empty"></div>
+    <div id="krt18" class="row3 col4 empty"></div>
+    <div id="krt19" class="row3 col5 empty"></div>
+    <div id="krt20" class="row3 col6 empty"></div>
+    <div id="krt21" class="row3 col7 empty"></div>
+
+  </div>
+
+  <div id="krtjs">
+    <div id="layer1"><!-- class layer1 -->
+    <div><!-- row1 -->
+      <img data-oorsprong="krt01" src="img/krt/krt01.jpg" class="krt krt01 row1 col1 layer1 yes-drop draggable"/>
+      <img data-oorsprong="krt02" src="img/krt/krt02.jpg" class="krt krt02 row1 col2 layer1 yes-drop draggable"/>
+      <img data-oorsprong="krt03" src="img/krt/krt03.jpg" class="krt krt03 row1 col3 layer1 yes-drop draggable"/>
+      <img data-oorsprong="krt04" src="img/krt/krt04.jpg" class="krt krt04 row1 col4 layer1 yes-drop draggable"/>
+      <img data-oorsprong="krt05" src="img/krt/krt05.jpg" class="krt krt05 row1 col5 layer1 no-drop"/>
+      <img data-oorsprong="krt06" src="img/krt/krt06.jpg" class="krt krt06 row1 col6 layer1 no-drop"/>
+      <img data-oorsprong="krt07" src="img/krt/krt07.jpg" class="krt krt07 row1 col7 layer1 no-drop"/>
+      </div>
+
+    <div><!-- row2 -->
+      <img data-oorsprong="krt08" src="img/krt/krt08.jpg" class="krt krt08 row2 col1 layer1 no-drop"/>
+      <img data-oorsprong="krt09" src="img/krt/krt09.jpg" class="krt krt09 row2 col2 layer1 no-drop"/>
+      <img data-oorsprong="krt10" src="img/krt/krt10.jpg" class="krt krt10 row2 col3 layer1 yes-drop draggable"/>
+      <img data-oorsprong="krt11" src="img/krt/krt11.jpg" class="krt krt11 row2 col4 layer1 no-drop"/>
+      <img data-oorsprong="krt12" src="img/krt/krt12.jpg" class="krt krt12 row2 col5 layer1 no-drop"/>
+      <img data-oorsprong="krt13" src="img/krt/krt13.jpg" class="krt krt13 row2 col6 layer1 no-drop"/>
+      <img data-oorsprong="krt14" src="img/krt/krt14.jpg" class="krt krt14 row2 col7 layer1 no-drop"/>
+      </div>
+
+    <div><!-- row3 -->
+      <img data-oorsprong="krt15" src="img/krt/krt15.jpg" class="krt krt15 row3 col1 layer1 no-drop"/>
+      <img data-oorsprong="krt16" src="img/krt/krt16.jpg" class="krt krt16 row3 col2 layer1 no-drop"/>
+      <img data-oorsprong="krt17" src="img/krt/krt17.jpg" class="krt krt17 row3 col3 layer1 no-drop"/>
+      <img data-oorsprong="krt18" src="img/krt/krt18.jpg" class="krt krt18 row3 col4 layer1 no-drop"/>
+      <img data-oorsprong="krt19" src="img/krt/krt19.jpg" class="krt krt19 row3 col5 layer1 no-drop"/>
+      <img data-oorsprong="krt20" src="img/krt/krt20.jpg" class="krt krt20 row3 col6 layer1 no-drop"/>
+      <img data-oorsprong="krt21" src="img/krt/krt21.jpg" class="krt krt21 row3 col7 layer1 no-drop"/>
+      </div>
+    </div>
+
+    <div id="layer2"><!-- class layer2 -->
+    <div><!-- row1 -->
+      <img data-oorsprong="krt01" src="img/krt/krt01.jpg" class="krt krt01 row1 col1 layer2 yes-drop draggable"/>
+      <img data-oorsprong="krt02" src="img/krt/krt02.jpg" class="krt krt02 row1 col2 layer2 yes-drop draggable"/>
+      <img data-oorsprong="krt03" src="img/krt/krt03.jpg" class="krt krt03 row1 col3 layer2 yes-drop draggable"/>
+      <img data-oorsprong="krt04" src="img/krt/krt04.jpg" class="krt krt04 row1 col4 layer2 yes-drop draggable"/>
+      <img data-oorsprong="krt05" src="img/krt/krt05.jpg" class="krt krt05 row1 col5 layer2 no-drop"/>
+      <img data-oorsprong="krt06" src="img/krt/krt06.jpg" class="krt krt06 row1 col6 layer2 no-drop"/>
+      <img data-oorsprong="krt07" src="img/krt/krt07.jpg" class="krt krt07 row1 col7 layer2 no-drop"/>
+      </div>
+
+    <div><!-- row2 -->
+      <img data-oorsprong="krt08" src="img/krt/krt08.jpg" class="krt krt08 row2 col1 layer2 no-drop"/>
+      <img data-oorsprong="krt09" src="img/krt/krt09.jpg" class="krt krt09 row2 col2 layer2 no-drop"/>
+      <img data-oorsprong="krt10" src="img/krt/krt10.jpg" class="krt krt10 row2 col3 layer2 yes-drop draggable"/>
+      <img data-oorsprong="krt11" src="img/krt/krt11.jpg" class="krt krt11 row2 col4 layer2 no-drop"/>
+      <img data-oorsprong="krt12" src="img/krt/krt12.jpg" class="krt krt12 row2 col5 layer2 no-drop"/>
+      <img data-oorsprong="krt13" src="img/krt/krt13.jpg" class="krt krt13 row2 col6 layer2 no-drop"/>
+      <img data-oorsprong="krt14" src="img/krt/krt14.jpg" class="krt krt14 row2 col7 layer2 no-drop"/>
+      </div>
+
+    <div><!-- row3 -->
+      <img data-oorsprong="krt15" src="img/krt/krt15.jpg" class="krt krt15 row3 col1 layer2 no-drop"/>
+      <img data-oorsprong="krt16" src="img/krt/krt16.jpg" class="krt krt16 row3 col2 layer2 no-drop"/>
+      <img data-oorsprong="krt17" src="img/krt/krt17.jpg" class="krt krt17 row3 col3 layer2 no-drop"/>
+      <img data-oorsprong="krt18" src="img/krt/krt18.jpg" class="krt krt18 row3 col4 layer2 no-drop"/>
+      <img data-oorsprong="krt19" src="img/krt/krt19.jpg" class="krt krt19 row3 col5 layer2 no-drop"/>
+      <img data-oorsprong="krt20" src="img/krt/krt20.jpg" class="krt krt20 row3 col6 layer2 no-drop"/>
+      <img data-oorsprong="krt21" src="img/krt/krt21.jpg" class="krt krt21 row3 col7 layer2 no-drop"/>
+      </div>
+    </div>
+
+    <div id="layer3"><!-- class layer3 -->
+    <div><!-- row1 -->
+      <img data-oorsprong="krt01" src="img/krt/krt01.jpg" class="krt krt01 row1 col1 layer3 yes-drop draggable"/>
+      <img data-oorsprong="krt02" src="img/krt/krt02.jpg" class="krt krt02 row1 col2 layer3 yes-drop draggable"/>
+      <img data-oorsprong="krt03" src="img/krt/krt03.jpg" class="krt krt03 row1 col3 layer3 yes-drop draggable"/>
+      <img data-oorsprong="krt04" src="img/krt/krt04.jpg" class="krt krt04 row1 col4 layer3 yes-drop draggable"/>
+      <img data-oorsprong="krt05" src="img/krt/krt05.jpg" class="krt krt05 row1 col5 layer3 no-drop"/>
+      <img data-oorsprong="krt06" src="img/krt/krt06.jpg" class="krt krt06 row1 col6 layer3 no-drop"/>
+      <img data-oorsprong="krt07" src="img/krt/krt07.jpg" class="krt krt07 row1 col7 layer3 no-drop"/>
+      </div>
+
+    <div><!-- row2 -->
+      <img data-oorsprong="krt08" src="img/krt/krt08.jpg" class="krt krt08 row2 col1 layer3 no-drop"/>
+      <img data-oorsprong="krt09" src="img/krt/krt09.jpg" class="krt krt09 row2 col2 layer3 no-drop"/>
+      <img data-oorsprong="krt10" src="img/krt/krt10.jpg" class="krt krt10 row2 col3 layer3 yes-drop draggable"/>
+      <img data-oorsprong="krt11" src="img/krt/krt11.jpg" class="krt krt11 row2 col4 layer3 no-drop"/>
+      <img data-oorsprong="krt12" src="img/krt/krt12.jpg" class="krt krt12 row2 col5 layer3 no-drop"/>
+      <img data-oorsprong="krt13" src="img/krt/krt13.jpg" class="krt krt13 row2 col6 layer3 no-drop"/>
+      <img data-oorsprong="krt14" src="img/krt/krt14.jpg" class="krt krt14 row2 col7 layer3 no-drop"/>
+      </div>
+
+    <div><!-- row3 -->
+      <img data-oorsprong="krt15" src="img/krt/krt15.jpg" class="krt krt15 row3 col1 layer3 no-drop"/>
+      <img data-oorsprong="krt16" src="img/krt/krt16.jpg" class="krt krt16 row3 col2 layer3 no-drop"/>
+      <img data-oorsprong="krt17" src="img/krt/krt17.jpg" class="krt krt17 row3 col3 layer3 no-drop"/>
+      <img data-oorsprong="krt18" src="img/krt/krt18.jpg" class="krt krt18 row3 col4 layer3 no-drop"/>
+      <img data-oorsprong="krt19" src="img/krt/krt19.jpg" class="krt krt19 row3 col5 layer3 no-drop"/>
+      <img data-oorsprong="krt20" src="img/krt/krt20.jpg" class="krt krt20 row3 col6 layer3 no-drop"/>
+      <img data-oorsprong="krt21" src="img/krt/krt21.jpg" class="krt krt21 row3 col7 layer3 no-drop"/>
+      </div>
+    </div>
+
+    <div id="layer4"><!-- class layer4 -->
+    <div><!-- row1 -->
+      <img data-oorsprong="krt01" src="img/krt/krt01.jpg" class="krt krt01 row1 col1 layer4 yes-drop draggable"/>
+      <img data-oorsprong="krt02" src="img/krt/krt02.jpg" class="krt krt02 row1 col2 layer4 yes-drop draggable"/>
+      <img data-oorsprong="krt03" src="img/krt/krt03.jpg" class="krt krt03 row1 col3 layer4 yes-drop draggable"/>
+      <img data-oorsprong="krt04" src="img/krt/krt04.jpg" class="krt krt04 row1 col4 layer4 yes-drop draggable"/>
+      <img data-oorsprong="krt05" src="img/krt/krt05.jpg" class="krt krt05 row1 col5 layer4 no-drop"/>
+      <img data-oorsprong="krt06" src="img/krt/krt06.jpg" class="krt krt06 row1 col6 layer4 no-drop"/>
+      <img data-oorsprong="krt07" src="img/krt/krt07.jpg" class="krt krt07 row1 col7 layer4 no-drop"/>
+      </div>
+
+    <div><!-- row2 -->
+      <img data-oorsprong="krt08" src="img/krt/krt08.jpg" class="krt krt08 row2 col1 layer4 no-drop"/>
+      <img data-oorsprong="krt09" src="img/krt/krt09.jpg" class="krt krt09 row2 col2 layer4 no-drop"/>
+      <img data-oorsprong="krt10" src="img/krt/krt10.jpg" class="krt krt10 row2 col3 layer4 yes-drop draggable"/>
+      <img data-oorsprong="krt11" src="img/krt/krt11.jpg" class="krt krt11 row2 col4 layer4 no-drop"/>
+      <img data-oorsprong="krt12" src="img/krt/krt12.jpg" class="krt krt12 row2 col5 layer4 no-drop"/>
+      <img data-oorsprong="krt13" src="img/krt/krt13.jpg" class="krt krt13 row2 col6 layer4 no-drop"/>
+      <img data-oorsprong="krt14" src="img/krt/krt14.jpg" class="krt krt14 row2 col7 layer4 no-drop"/>
+      </div>
+
+    <div><!-- row3 -->
+      <img data-oorsprong="krt15" src="img/krt/krt15.jpg" class="krt krt15 row3 col1 layer4 no-drop"/>
+      <img data-oorsprong="krt16" src="img/krt/krt16.jpg" class="krt krt16 row3 col2 layer4 no-drop"/>
+      <img data-oorsprong="krt17" src="img/krt/krt17.jpg" class="krt krt17 row3 col3 layer4 no-drop"/>
+      <img data-oorsprong="krt18" src="img/krt/krt18.jpg" class="krt krt18 row3 col4 layer4 no-drop"/>
+      <img data-oorsprong="krt19" src="img/krt/krt19.jpg" class="krt krt19 row3 col5 layer4 no-drop"/>
+      <img data-oorsprong="krt20" src="img/krt/krt20.jpg" class="krt krt20 row3 col6 layer4 no-drop"/>
+      <img data-oorsprong="krt21" src="img/krt/krt21.jpg" class="krt krt21 row3 col7 layer4 no-drop"/>
+      </div>
+    </div>
+  </div>
+
+  <div id="dropzone">
+    <div id="divdrop1" class="dropzone"></div>
+    <div id="divdrop2" class="dropzone"></div>
+    <div id="divdrop3" class="dropzone"></div>
+    <div id="divdrop4" class="dropzone"></div>
+    <div><img id="currentBeat" src="img/icons/radio.png" class="hide icon"/></div>
+  </div>
+
+  <div id="controls">
+    <img id="play" class="icon controls" src="img/icons/play.png" onclick="RhythmSample.play(false)">
+    <img id="stop" class="icon controls hide" src="img/icons/stop.png" onclick="stop()">
+    <img id="reset" class="icon controls" src="img/icons/reset.png" onclick="reset()">
+    <img id="random" class="icon controls" src="img/icons/random.png" onclick="randomize()">
+    <img id="playRandomized" class="icon controls hide" src="img/icons/play.png" onclick="RhythmSample.play(true)">
+    <img id="stopRandomized" class="icon controls hide" src="img/icons/stop.png" onclick="stop()">
+  </div>
+
+  <script src="js/dragdrop.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/settings.js"></script>
+
+  <script src="js/sound/buffer-loader.js"></script>
+  <script src="js/sound/init.js"></script>
+  <script src="js/sound/play.js"></script>
+
+</body>
+
+</html>

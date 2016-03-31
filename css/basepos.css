@@ -1,0 +1,68 @@
+.row1 { top: 150px }
+.row2 { top: 265px }
+.row3 { top: 380px }
+
+/*.col1 { left: calc((100% - 700px)/26*10) }
+.col2 { left: calc((100% - 700px)/26*11 + 100px) }
+.col3 { left: calc((100% - 700px)/26*12 + 200px) }
+.col4 { left: calc((100% - 700px)/26*13 + 300px) }
+.col5 { left: calc((100% - 700px)/26*14 + 400px) }
+.col6 { left: calc((100% - 700px)/26*15 + 500px) }
+.col7 { left: calc((100% - 700px)/26*16 + 600px) }*/
+
+.col1 { left: calc((100% - 790px)/2) }
+.col2 { left: calc((100% - 790px)/2 + 115px) }
+.col3 { left: calc((100% - 790px)/2 + 230px) }
+.col4 { left: calc((100% - 790px)/2 + 345px) }
+.col5 { left: calc((100% - 790px)/2 + 460px) }
+.col6 { left: calc((100% - 790px)/2 + 575px) }
+.col7 { left: calc((100% - 790px)/2 + 690px) }
+
+.layer1 { z-index: 1 }
+.layer2 { z-index: 2 }
+.layer3 { z-index: 3 }
+.layer4 { z-index: 4 }
+
+#divdrop1 { left: calc((100% - 430px)/2) }
+#divdrop2 { left: calc((100% - 430px)/2 + 110px) }
+#divdrop3 { left: calc((100% - 430px)/2 + 220px) }
+#divdrop4 { left: calc((100% - 430px)/2 + 330px) }
+
+#logo {
+  height: 100px;
+  width: 420px;
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0px;
+}
+
+.empty {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  border: none;
+  border-radius: 7px;
+  background-color: #ddd;
+  position: absolute;
+  z-index: -1;
+}
+.dropzone {
+  width: 100px;
+  height: 100px;
+  top: 525px;
+  margin: 0px;
+  border: none;
+  border-radius: 7px;
+  background-color: #ddd;
+  transition: background-color 0.3s;
+  position: absolute;
+}
+
+#currentBeat {
+  position: absolute;
+  top: 650px;
+}
